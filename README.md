@@ -22,7 +22,7 @@ Water Refill System made by pf_scripts
 to be able to use the script to a full extent, follow these steps:
 1. Add the following code in `ox_inventory\data\items.lua`:
 ```lua
-["water_bottle"] = {
+    ["water_bottle"] = {
 		label = "Garrafa de Água",
 		weight = 200,
 		stack = true,
