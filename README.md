@@ -1,18 +1,36 @@
-# pf_wrs
+<h1 align='center'>
+  pf_wrs
+</h1>
 
-## Overview
-Water Refill System made by pf_scripts
+<div align="center">
+Water refill system with security measures and kick functionality
+</div>
+![alt text](image.png)
+<div align='center'>
+  
+  ![GitHub License](https://img.shields.io/github/license/PFScripts/pf_wrs?label=License&labelColor=%E2%80%8E%E2%80%8E&color=%2330b893)
+  <a href='https://discord.gg/QhMmyx8xsE'>
+    ![Discord](https://img.shields.io/discord/1279910494425186446?style=flat&logo=discord&logoColor=%2330b893&label=%E2%80%8E%20&labelColor=%E2%80%8E%E2%80%8E&color=%2330b893)
+  </a>
+</div>
 
----
+## `Information`
 
-## Features
+### `Features` 
+
 - Lets you refill empty water bottles in water fountains / sinks / water coolers
-- Player drop functionality with customizable reasons
+- Player drop functionality and security implementations with customizable reasons
 - Fully costumizable
 
----
+## `Requirements`
 
-## Installation
+- [**qbx_smallresources**](https://github.com/Qbox-project/qbx_smallresources)
+- [**ox_inventory**](https://github.com/overextended/ox_inventory)
+
+## `Getting Started`
+
+### `Installation`
+
 
 1. Download the script from [GitHub](https://github.com/try2diept/pf_wrs).
 2. Extract the folder into your FiveM resources directory.
@@ -90,8 +108,6 @@ for drink, params in pairs(config.consumables.drink) do
     end)
 end
 ```
-
----
 
 ## Configuration
 
