@@ -5,7 +5,9 @@
 <div align="center">
 Water refill system with security measures and kick functionality
 </div>
-![alt text](image.png)
+<p align="center">
+  <img src="image.png" width="350" title="pf_wrs">
+</p>
 <div align='center'>
   
   ![GitHub License](https://img.shields.io/github/license/PFScripts/pf_wrs?label=License&labelColor=%E2%80%8E%E2%80%8E&color=%2330b893)
