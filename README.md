@@ -103,7 +103,7 @@ for drink, params in pairs(config.consumables.drink) do
 
         addThirst(source, sustenance)
         if item.name == 'water_bottle' then
-            if exports.ox_inventory:CanCarryItem(source, 'water', 1) then
+            if exports.ox_inventory:CanCarryItem(source, 'water_bottle', 1) then
                 exports.ox_inventory:AddItem(source, 'empty_water_bottle', 1)
             else
                 lib.notify({title = 'Inventory', description = 'You can´t carry any more items', type = 'error'})
