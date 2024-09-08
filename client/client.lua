@@ -22,13 +22,13 @@ exports.ox_target:addModel(Config.targetmodels, {
         distance = TARGET_DISTANCE,
         onSelect = function(data)
             local targetEntity = data.entity or nil
-            TriggerEvent('consumables:client:FillWaterBottle', targetEntity)
+            TriggerEvent('pf_wrs:client:FillWaterBottle', targetEntity)
         end,
         items = { Config.items.empty_bottle }
     }
 })
 
-RegisterNetEvent('consumables:client:FillWaterBottle', function(targetEntity)
+RegisterNetEvent('pf_wrs:client:FillWaterBottle', function(targetEntity)
     if targetEntity and isPlayerWithinRange(targetEntity) then
         TriggerEvent('animations:client:EmoteCommandStart', { "mechanic4" })
 
@@ -48,7 +48,7 @@ RegisterNetEvent('consumables:client:FillWaterBottle', function(targetEntity)
             })
 
             if completed then
-                TriggerServerEvent('consumables:server:FillWaterBottle', success)
+                TriggerServerEvent('pf_wrs:server:FillWaterBottle', success)
                 exports.scully_emotemenu:cancelEmote()
             else
                 print(locale('prints.progress_cancelled'))
@@ -60,7 +60,7 @@ RegisterNetEvent('consumables:client:FillWaterBottle', function(targetEntity)
         end
     else
         if Config.dropplayer.status then
-            DropPlayer(source, Config.dropplayer.dropreason)
+            TriggerServerEvent('pf_wrs:server:PlayerTooFar')
         else
             lib.notify({
                 title = locale('notify.too_far.title'),

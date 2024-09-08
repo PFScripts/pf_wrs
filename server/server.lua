@@ -1,7 +1,6 @@
 local Config = require 'config.config'
 
-
-RegisterNetEvent('consumables:server:FillWaterBottle', function(skillCheckSuccess)
+RegisterNetEvent('pf_wrs:server:FillWaterBottle', function(skillCheckSuccess)
     local src = source
     local playerHasItem = exports.ox_inventory:Search(src, "slots", Config.items.empty_bottle)
 
@@ -15,5 +14,12 @@ RegisterNetEvent('consumables:server:FillWaterBottle', function(skillCheckSucces
         end
     else
         TriggerClientEvent('ox_lib:notify', src, { type = 'error', text = locale['notify.no_empty_bottle'] })
+    end
+end)
+
+RegisterNetEvent('pf_wrs:server:PlayerTooFar', function()
+    local src = source
+    if Config.dropplayer.status then
+        DropPlayer(src, Config.dropplayer.dropreason)
     end
 end)
