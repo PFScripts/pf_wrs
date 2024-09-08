@@ -1,0 +1,24 @@
+{
+  "notify": {
+    "too_far":{
+      "title":"Water Refilling",
+      "description":"You are too far for refilling your bottle"
+    },
+    "success_message":"You have filled the water bottle to the top!",
+    "remove_fail_message":"Failed to remove empty water bottle.",
+    "no_empty_bottle":"You do not have an empty water bottle."
+  },
+
+  "target": {
+    "fill_water_bottle":"Fill Water Bottle"
+  },
+
+  "progress": {
+    "filling_water_bottle":"Filling Water Bottle..."
+  },
+  
+  "prints": {
+    "progress_cancelled":"Filling process was cancelled.",
+    "skill_check_failed":"Skill check failed."
+  }
+}

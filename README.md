@@ -28,6 +28,8 @@ Water refill system with security measures and kick functionality
 
 - [**qbx_smallresources**](https://github.com/Qbox-project/qbx_smallresources)
 - [**ox_inventory**](https://github.com/overextended/ox_inventory)
+- [**ox_lib**](https://github.com/overextended/ox_lib)
+
 
 ## `Getting Started`
 
@@ -113,4 +115,5 @@ end
 
 ## Configuration
 
-You can configure the script using the provided `config.lua` file. Below is an example of how you can customize various parameters.
+- You can configure the script using the provided `config.lua` file. Below is an example of how you can customize various parameters.
+- Can change / add new languages in `locales/*`
