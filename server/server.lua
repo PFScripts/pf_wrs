@@ -13,7 +13,7 @@ RegisterNetEvent('pf_wrs:server:FillWaterBottle', function(skillCheckSuccess)
             TriggerClientEvent('ox_lib:notify', src, { type = 'error', text = locale{'notify.remove_fail_message'} })
         end
     else
-        TriggerClientEvent('ox_lib:notify', src, { type = 'error', text = locale['notify.no_empty_bottle'] })
+        TriggerClientEvent('ox_lib:notify', src, { type = 'error', text = locale{'notify.no_empty_bottle'} })
     end
 end)
 
